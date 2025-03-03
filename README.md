@@ -4,7 +4,7 @@ This project is a *pixel-perfect* replication of a given design mockup using *Ne
 
 ## 🚀 Live Demo
 
-<a href="https://drive.google.com/file/d/1wIGcOF5e1whRn755w2LeMM3qhB4Q_8fc/view?usp=sharing">![Demo video of Admin Page](https://img.shields.io/badge/Demo_Video_Of_Admin_Page-Click_ME-brightgreen.svg?style=plastic&logo=YouTube&logoColor=red)</a>
+<a href="https://drive.google.com/file/d/1wIGcOF5e1whRn755w2LeMM3qhB4Q_8fc/view?usp=sharing">![Demo video of Dashboard Page](https://img.shields.io/badge/Demo_Video_Of_Dashboard_Page-Click_ME-brightgreen.svg?style=plastic&logo=YouTube&logoColor=red)</a>
 
 [![Deployed App Vercel Link](https://img.shields.io/badge/Deployed_App_Vercel_Link-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://cruiserental.vercel.app/)
 
