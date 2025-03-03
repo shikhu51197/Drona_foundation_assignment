@@ -1,0 +1,829 @@
+/*!**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/Model/model.module.scss ***!
+  \**********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.model_overlay__IzCKU {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.model_modal__RLCva {
+  background: white;
+  padding: 30px;
+  width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  position: relative;
+  text-align: center;
+  animation: model_fadeIn__KD63j 0.3s ease-in-out;
+}
+.model_modal__RLCva h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.model_closeButton__O_DYz {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.model_form__x9lqD {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.model_form__x9lqD label {
+  font-size: 14px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+}
+.model_form__x9lqD input,
+.model_form__x9lqD select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border-color 0.3s;
+}
+.model_form__x9lqD input:focus,
+.model_form__x9lqD select:focus {
+  border-color: #007bff;
+}
+
+.model_submitButton__Zv3R1 {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+.model_submitButton__Zv3R1:hover {
+  background-color: #0056b3;
+}
+
+@keyframes model_fadeIn__KD63j {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/Sidebar/Sidebar.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Sidebar_sidebar__5cJdO {
+  width: 240px;
+  background-color: #1e1e2d;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  transition: width 0.3s ease;
+  overflow: hidden;
+}
+.Sidebar_sidebar__5cJdO.Sidebar_closed__tlphO {
+  width: 0;
+}
+
+.Sidebar_logo__CU_Yx {
+  display: flex;
+  align-items: center;
+  padding: 20px 15px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+.Sidebar_logo__CU_Yx svg {
+  margin-right: 10px;
+}
+.Sidebar_logo__CU_Yx span {
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.Sidebar_nav__JDPWP {
+  flex: 1 1;
+  overflow-y: auto;
+}
+.Sidebar_nav__JDPWP ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Sidebar_navItem__uKafb {
+  display: flex;
+  align-items: center;
+  padding: 12px 15px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+.Sidebar_navItem__uKafb:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.Sidebar_navItem__uKafb.Sidebar_active___o__g {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: 3px solid var(--blue-base);
+}
+.Sidebar_navItem__uKafb .Sidebar_iconContainer__xk9cy {
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+}
+.Sidebar_navItem__uKafb span {
+  font-size: 14px;
+}
+
+.Sidebar_addNew__0h_Fp {
+  padding: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.Sidebar_addNew__0h_Fp button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+  background-color: #c22033;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.Sidebar_addNew__0h_Fp button svg {
+  margin-right: 8px;
+}
+.Sidebar_addNew__0h_Fp button:hover {
+  background-color: rgb(150.2212389381, 24.7787610619, 39.4911504425);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/Header/Header.module.scss ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.Header_header__MwWvM {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  background-color: #c22033;
+  color: white;
+  height: 70px;
+}
+
+.Header_leftSection___S6EU {
+  display: flex;
+  align-items: center;
+}
+
+.Header_menuButton__0azx_ {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  margin-right: 15px;
+  padding: 0;
+}
+.Header_menuButton__0azx_ span {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+}
+
+.Header_welcomeText__NgyXf h2 {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+.Header_welcomeText__NgyXf p {
+  font-size: 12px;
+  margin: 0;
+}
+
+.Header_rightSection__ilG2x {
+  display: flex;
+  align-items: center;
+}
+
+.Header_searchContainer__kREr_ {
+  position: relative;
+  margin-right: 15px;
+}
+
+.Header_searchInput__lOOoF {
+  padding: 8px 35px 8px 10px;
+  border-radius: 4px;
+  border: none;
+  width: 250px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.Header_searchButton__tLL_S {
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  color: #666;
+}
+
+.Header_notifications__i0ruL, .Header_messages__G6GJK {
+  margin-right: 15px;
+  position: relative;
+}
+
+.Header_iconBadge__FvZqD {
+  position: relative;
+  cursor: pointer;
+}
+
+.Header_badge__7hFli {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: var(--red-base);
+  color: white;
+  border-radius: 50%;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.Header_profileContainer__2FrIC {
+  position: relative;
+}
+
+.Header_profile__yad4a {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.Header_profileImage__etaQs {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.Header_profileText__KzS0r {
+  margin-right: 5px;
+}
+
+.Header_profileMenu__mMiGx {
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 180px;
+  z-index: 10;
+  margin-top: 5px;
+}
+.Header_profileMenu__mMiGx ul {
+  list-style: none;
+  padding: 0;
+}
+.Header_profileMenu__mMiGx ul li {
+  padding: 10px 15px;
+  color: #333;
+  cursor: pointer;
+}
+.Header_profileMenu__mMiGx ul li:hover {
+  background-color: var(--gray-light);
+}
+/*!**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/components/ExamDashboard/ExamDashboard.module.scss ***!
+  \**************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.ExamDashboard_examDashboard__z4GQj {
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.ExamDashboard_header__saQwj {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.ExamDashboard_title__weV_Y h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.ExamDashboard_breadcrumb__Zk2MW {
+  font-size: 12px;
+  color: #666;
+}
+.ExamDashboard_breadcrumb__Zk2MW span:last-child {
+  color: #333;
+  font-weight: 500;
+}
+
+.ExamDashboard_actions__a6eF5 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.ExamDashboard_searchButton__omxli {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+.ExamDashboard_searchButton__omxli:hover {
+  background-color: #f5f5f5;
+}
+
+.ExamDashboard_createButton__ntVay, .ExamDashboard_historyButton__N_lbS {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+}
+.ExamDashboard_createButton__ntVay svg, .ExamDashboard_historyButton__N_lbS svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ExamDashboard_createButton__ntVay {
+  background-color: white;
+  border: 1px solid var(--blue-base);
+  color: var(--blue-base);
+}
+.ExamDashboard_createButton__ntVay:hover {
+  background-color: var(--blue-extra-light);
+}
+
+.ExamDashboard_historyButton__N_lbS {
+  background-color: var(--blue-base);
+  border: none;
+  color: white;
+}
+.ExamDashboard_historyButton__N_lbS:hover {
+  background-color: var(--blue-dark);
+}
+
+.ExamDashboard_examInfo__nI10_ {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ExamDashboard_universityInfo__QyD_O {
+  display: flex;
+  align-items: center;
+}
+.ExamDashboard_universityInfo__QyD_O .ExamDashboard_logo__K1GgB {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.ExamDashboard_universityInfo__QyD_O .ExamDashboard_logo__K1GgB img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.ExamDashboard_universityInfo__QyD_O .ExamDashboard_details__5aZSD h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.ExamDashboard_universityInfo__QyD_O .ExamDashboard_details__5aZSD p {
+  font-size: 12px;
+  margin: 0;
+  color: #666;
+}
+
+.ExamDashboard_courseInfo__cK08U {
+  display: flex;
+  align-items: center;
+}
+.ExamDashboard_courseInfo__cK08U .ExamDashboard_icon__NfE9V {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: var(--blue-extra-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 10px;
+  color: var(--blue-base);
+}
+.ExamDashboard_courseInfo__cK08U h4 {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0;
+  margin-bottom: 3px;
+}
+.ExamDashboard_courseInfo__cK08U p {
+  font-size: 12px;
+  margin: 0;
+  color: #666;
+}
+
+.ExamDashboard_examActions__zG1Qs {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.ExamDashboard_postponeButton____Me_ {
+  padding: 8px 16px;
+  background-color: var(--red-base);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.ExamDashboard_postponeButton____Me_:hover {
+  background-color: var(--red-dark);
+}
+
+.ExamDashboard_examProgress__Qi_IG {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+.ExamDashboard_examProgress__Qi_IG span {
+  font-size: 12px;
+  color: #666;
+}
+.ExamDashboard_examProgress__Qi_IG .ExamDashboard_progressBar__k1zTe {
+  width: 150px;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  overflow: hidden;
+}
+.ExamDashboard_examProgress__Qi_IG .ExamDashboard_progressBar__k1zTe .ExamDashboard_progress__MYgmv {
+  height: 100%;
+  background-color: var(--blue-base);
+}
+
+.ExamDashboard_exportData__Wn1CK button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  color: #333;
+  font-weight: 500;
+}
+.ExamDashboard_exportData__Wn1CK button:hover {
+  background-color: #f5f5f5;
+}
+
+.ExamDashboard_moreButton__Rkddn {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+}
+.ExamDashboard_moreButton__Rkddn:hover {
+  background-color: #f5f5f5;
+}
+
+.ExamDashboard_tabsContainer__LaikN {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.ExamDashboard_tabs__VmncW {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.ExamDashboard_tabs__VmncW::-webkit-scrollbar {
+  display: none;
+}
+
+.ExamDashboard_tab__43ye_ {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+.ExamDashboard_tab__43ye_ svg {
+  width: 16px;
+  height: 16px;
+}
+.ExamDashboard_tab__43ye_:hover {
+  color: var(--blue-base);
+}
+.ExamDashboard_tab__43ye_.ExamDashboard_active__kTnw_ {
+  color: var(--blue-base);
+}
+.ExamDashboard_tab__43ye_.ExamDashboard_active__kTnw_::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--blue-base);
+}
+
+.ExamDashboard_nextButton__p3g__ {
+  position: -webkit-sticky;
+  position: sticky;
+  right: 0;
+  background-color: white;
+  border: none;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -5px 0 10px rgba(255, 255, 255, 0.8);
+}
+.ExamDashboard_nextButton__p3g__:hover {
+  background-color: #f5f5f5;
+}
+
+.ExamDashboard_tabContent__l6_TM {
+  padding: 20px;
+}
+
+.ExamDashboard_examCards__8Rm6g {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 20px;
+  gap: 20px;
+}
+
+.ExamDashboard_examCard__W4dVb {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.ExamDashboard_cardHeader__dFkUB {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.ExamDashboard_status__X7hBk {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.ExamDashboard_status__X7hBk.ExamDashboard_green__0mMRd {
+  color: var(--green-base);
+}
+.ExamDashboard_status__X7hBk.ExamDashboard_red__fXp_u {
+  color: var(--red-base);
+}
+.ExamDashboard_status__X7hBk .ExamDashboard_statusCount__4pxYW {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  font-weight: bold;
+  color: white;
+}
+.ExamDashboard_status__X7hBk.ExamDashboard_green__0mMRd .ExamDashboard_statusCount__4pxYW {
+  background-color: var(--green-base);
+}
+.ExamDashboard_status__X7hBk.ExamDashboard_red__fXp_u .ExamDashboard_statusCount__4pxYW {
+  background-color: var(--red-base);
+}
+
+.ExamDashboard_cardMenu__CUOxu {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+}
+.ExamDashboard_cardMenu__CUOxu:hover {
+  color: #333;
+}
+
+.ExamDashboard_menuDropdown___uZWw {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 200px;
+}
+.ExamDashboard_menuDropdown___uZWw button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 15px;
+  background: none;
+  border: none;
+  font-size: 13px;
+  color: #333;
+}
+.ExamDashboard_menuDropdown___uZWw button:hover {
+  background-color: #f5f5f5;
+}
+
+.ExamDashboard_cardBody__UMrOv {
+  padding: 15px;
+  flex: 1 1;
+}
+
+.ExamDashboard_subjectCode__dundK {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.ExamDashboard_subjectTitle__8SNU4 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.ExamDashboard_examDate__xXsNa {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.ExamDashboard_attendanceSection__YdwKx {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.ExamDashboard_attendanceHeader__CTfQ6 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.ExamDashboard_attendanceHeader__CTfQ6 .ExamDashboard_marked__PVh1G {
+  font-weight: 500;
+  color: var(--green-base);
+}
+.ExamDashboard_attendanceHeader__CTfQ6 .ExamDashboard_marked__PVh1G.ExamDashboard_notMarked__AWuSy {
+  color: var(--red-base);
+}
+
+.ExamDashboard_attendanceStats__K8LWg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ExamDashboard_statItem__SmwT0 {
+  text-align: center;
+  flex: 1 1;
+}
+
+.ExamDashboard_statLabel__UDHaQ {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.ExamDashboard_statValue__MRHex {
+  font-size: 18px;
+  font-weight: 600;
+}
+.ExamDashboard_statValue__MRHex.ExamDashboard_absentHighlight__p85sc {
+  color: var(--red-base);
+}
+
+.ExamDashboard_markStatus__7rR6R, .ExamDashboard_examStatus__WHJkk {
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.ExamDashboard_markStatus__7rR6R {
+  background-color: var(--yellow-extra-light);
+  color: var(--yellow-dark);
+}
+
+.ExamDashboard_examStatus__WHJkk {
+  background-color: var(--green-extra-light);
+  color: var(--green-dark);
+}
+
+.ExamDashboard_cardFooter__toRnj {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.ExamDashboard_actionButton__hOsX_ {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--blue-base);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+}
+.ExamDashboard_actionButton__hOsX_:hover {
+  background-color: var(--blue-dark);
+}
+/*!********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[2]!./node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[11].oneOf[9].use[3]!./node_modules/next/dist/build/webpack/loaders/resolve-url-loader/index.js??ruleSet[1].rules[11].oneOf[9].use[4]!./node_modules/next/dist/compiled/sass-loader/cjs.js??ruleSet[1].rules[11].oneOf[9].use[5]!./src/app/page.module.scss ***!
+  \********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.page_main__akH3E {
+  display: flex;
+  min-height: 100vh;
+  background-color: var(--gray-light);
+}
+
+.page_content__szHtB {
+  flex: 1 1;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}

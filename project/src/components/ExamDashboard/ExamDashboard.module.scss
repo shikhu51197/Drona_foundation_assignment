@@ -1,0 +1,529 @@
+.examDashboard {
+  padding: 20px;
+  background-color: #f5f5f5;
+  height: calc(100vh - 70px);
+  overflow-y: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.title {
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.breadcrumb {
+  font-size: 12px;
+  color: #666;
+  
+  span {
+    &:last-child {
+      color: #333;
+      font-weight: 500;
+    }
+  }
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.searchButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.createButton, .historyButton {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.createButton {
+  background-color: white;
+  border: 1px solid var(--blue-base);
+  color: var(--blue-base);
+  
+  &:hover {
+    background-color: var(--blue-extra-light);
+  }
+}
+
+.historyButton {
+  background-color: var(--blue-base);
+  border: none;
+  color: white;
+  
+  &:hover {
+    background-color: var(--blue-dark);
+  }
+}
+
+.examInfo {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.universityInfo {
+  display: flex;
+  align-items: center;
+  
+  .logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+  
+  .details {
+    h3 {
+      font-size: 16px;
+      font-weight: 600;
+      margin: 0;
+      margin-bottom: 5px;
+    }
+    
+    p {
+      font-size: 12px;
+      margin: 0;
+      color: #666;
+    }
+  }
+}
+
+.courseInfo {
+  display: flex;
+  align-items: center;
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: var(--blue-extra-light);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    color: var(--blue-base);
+  }
+  
+  h4 {
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 3px;
+  }
+  
+  p {
+    font-size: 12px;
+    margin: 0;
+    color: #666;
+  }
+}
+
+.examActions {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.postponeButton {
+  padding: 8px 16px;
+  background-color: var(--red-base);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  
+  &:hover {
+    background-color: var(--red-dark);
+  }
+}
+
+.examProgress {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  
+  span {
+    font-size: 12px;
+    color: #666;
+  }
+  
+  .progressBar {
+    width: 150px;
+    height: 6px;
+    background-color: #eee;
+    border-radius: 3px;
+    overflow: hidden;
+    
+    .progress {
+      height: 100%;
+      background-color: var(--blue-base);
+    }
+  }
+}
+
+.exportData {
+  button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    color: #333;
+    font-weight: 500;
+    
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+.moreButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background-color: white;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #666;
+  
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.tabsContainer {
+  background-color: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.tabs {
+  display: flex;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  overflow-x: auto;
+  scrollbar-width: none;
+  
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.tab {
+  padding: 12px 20px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  color: #666;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+  
+  &:hover {
+    color: var(--blue-base);
+  }
+  
+  &.active {
+    color: var(--blue-base);
+    
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background-color: var(--blue-base);
+    }
+  }
+}
+
+.nextButton {
+  position: sticky;
+  right: 0;
+  background-color: white;
+  border: none;
+  width: 40px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: -5px 0 10px rgba(255, 255, 255, 0.8);
+  
+  &:hover {
+    background-color: #f5f5f5;
+  }
+}
+
+.tabContent {
+  padding: 20px;
+}
+
+.examCards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.examCard {
+  background-color: white;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  font-weight: 500;
+  
+  &.green {
+    color: var(--green-base);
+  }
+  
+  &.red {
+    color: var(--red-base);
+  }
+  
+  .statusCount {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-weight: bold;
+    color: white;
+  }
+  
+  &.green .statusCount {
+    background-color: var(--green-base);
+  }
+  
+  &.red .statusCount {
+    background-color: var(--red-base);
+  }
+}
+
+.cardMenu {
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  
+  &:hover {
+    color: #333;
+  }
+}
+
+.menuDropdown {
+  position: absolute;
+  top: 100%;
+  right: 10px;
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 10;
+  width: 200px;
+  
+  button {
+    width: 100%;
+    text-align: left;
+    padding: 10px 15px;
+    background: none;
+    border: none;
+    font-size: 13px;
+    color: #333;
+    
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}
+
+.cardBody {
+  padding: 15px;
+  flex: 1;
+}
+
+.subjectCode {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.subjectTitle {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.examDate {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 15px;
+}
+
+.attendanceSection {
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.attendanceHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  font-size: 12px;
+  
+  .marked {
+    font-weight: 500;
+    color: var(--green-base);
+    
+    &.notMarked {
+      color: var(--red-base);
+    }
+  }
+}
+
+.attendanceStats {
+  display: flex;
+  justify-content: space-between;
+}
+
+.statItem {
+  text-align: center;
+  flex: 1;
+}
+
+.statLabel {
+  font-size: 11px;
+  color: #666;
+  margin-bottom: 5px;
+}
+
+.statValue {
+  font-size: 18px;
+  font-weight: 600;
+  
+  &.absentHighlight {
+    color: var(--red-base);
+  }
+}
+
+.markStatus, .examStatus {
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.markStatus {
+  background-color: var(--yellow-extra-light);
+  color: var(--yellow-dark);
+}
+
+.examStatus {
+  background-color: var(--green-extra-light);
+  color: var(--green-dark);
+}
+
+.cardFooter {
+  padding: 15px;
+  border-top: 1px solid #eee;
+}
+
+.actionButton {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--blue-base);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-weight: 500;
+  
+  &:hover {
+    background-color: var(--blue-dark);
+  }
+}
