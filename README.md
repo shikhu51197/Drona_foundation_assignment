@@ -3,7 +3,6 @@
 This project is a *pixel-perfect* replication of a given design mockup using *Next.js* and *SCSS*. The goal is to assess front-end development skills by accurately implementing the design and ensuring interactive UI elements function as expected.
 
 ## 🚀 Live Demo
-
 ---
 
 ## 🛠️ *Tech Stack*
