@@ -6,13 +6,6 @@ This project is a *pixel-perfect* replication of a given design mockup using *Ne
 
 ---
 
-## 🛠️ *Tech Stack*
-- *Next.js* (React Framework)
-- *SCSS (SASS)* for styling
-- *Vanilla JavaScript (No external libraries)*
-
----
-
 ## 📌 *Features & Functionality*
 ✅ *Pixel-Perfect UI* – Ensures accurate replication of the provided design.  
 ✅ *Tab Navigation* – Clicking tabs switches content dynamically.  
